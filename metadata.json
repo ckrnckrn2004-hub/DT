@@ -1,0 +1,6 @@
+{
+  "name": "부여 스마트 관광 가이드",
+  "description": "부여 스마트 관광 가이드 및 로컬 잇다 충청 무차량 맞춤 연계 가이드 서비스",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
