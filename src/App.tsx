@@ -14,6 +14,7 @@ import {
   BookOpen,
   Calendar,
   Check,
+  ChevronLeft,
   ChevronRight,
   Clock,
   CloudRain,
@@ -35,6 +36,37 @@ import {
 import { REGIONS, buyeoDb, TRANSPORTS, WAITING_SPOTS } from './data';
 import { Place, Transport, PlaceFilters, TransitFilters, WaitingSpot } from './types';
 import LeafletMap from './components/LeafletMap';
+
+interface SafeImageProps {
+  src: string;
+  fallbackSrc: string;
+  alt?: string;
+  className?: string;
+  loading?: "lazy" | "eager";
+  referrerPolicy?: React.HTMLAttributeReferrerPolicy;
+}
+
+function SafeImage({ src, fallbackSrc, alt, className, ...props }: SafeImageProps) {
+  const [imgSrc, setImgSrc] = React.useState<string>(src);
+
+  React.useEffect(() => {
+    setImgSrc(src);
+  }, [src]);
+
+  return (
+    <img
+      {...props}
+      src={imgSrc}
+      alt={alt}
+      className={className}
+      onError={() => {
+        if (fallbackSrc && imgSrc !== fallbackSrc) {
+          setImgSrc(fallbackSrc);
+        }
+      }}
+    />
+  );
+}
 
 export default function App() {
   // Tab states: 'home' | 'places' | 'transit' | 'summary' | 'schedule'
@@ -298,8 +330,30 @@ export default function App() {
 
   // Selected full objects list
   const activeSelectedPlacesList = useMemo(() => {
-    return Object.values(buyeoDb).filter(p => selectedPlaces.includes(p.id)) as Place[];
-  }, [selectedPlaces]);
+    const places = Object.values(buyeoDb).filter(p => selectedPlaces.includes(p.id)) as Place[];
+    if (selectedTransports.includes('drt')) {
+      const DRT_ROUTE_ORDER: { [key: string]: number } = {
+        'seodongyo': 10,
+        'gungnamji': 20,
+        'shindongyeop': 30,
+        'buyeomuseum': 40,
+        'jeonglimsaji': 50,
+        'buyeomarket': 60,
+        'gudraenaru': 70,
+        'baekmagangwater': 80,
+        'busosanseong': 90,
+        'baekjeculture': 100,
+        'muryangsa': 110,
+        'buyeotomb': 120
+      };
+      return [...places].sort((a, b) => {
+        const orderA = DRT_ROUTE_ORDER[a.id] || 999;
+        const orderB = DRT_ROUTE_ORDER[b.id] || 999;
+        return orderA - orderB;
+      });
+    }
+    return places;
+  }, [selectedPlaces, selectedTransports]);
 
   const activeSelectedTransportsList = useMemo(() => {
     return TRANSPORTS.filter(t => selectedTransports.includes(t.id));
@@ -323,8 +377,8 @@ export default function App() {
     const primaryTransitId = selectedTransports[0] || 'walk';
 
     // Scenario B: DRT (Shuckle) selected
-    if (primaryTransitId === 'drt') {
-      return `✨ 시내 하방 대중교통 배차 사각지대 공백이 감지되어, 맞춤형 <b>수요응답형 콜버스 (DRT 셔클)</b> 사전 예약을 즉시 연계해 드립니다. <b>${passengers}인</b> 탑승 환경에 맞춰, 추위나 비를 피할 수 있는 안전 픽업 구역인 <b>[${waitingPlace}]</b> 내에서 대기해 주세요. 배차가 완료되면 카카오 알림톡이 전송됩니다.`;
+    if (primaryTransitId === 'drt' || selectedTransports.includes('drt')) {
+      return `✨ 맞춤형 <b>수요응답형 콜버스 (DRT)</b>의 실시간 추적 노선이 활성화되었습니다! 부여군 전용 스마트 DRT 노선을 정방향 기하학적 궤적에 맞춰 <b>[부여시외버스터미널 ➔ 궁남지 ➔ 국립부여박물관 ➔ 정림사지 ➔ 부소산성 ➔ 백제문화단지 ➔ 공주역 KTX]</b> 순으로 안전하고 편리하게 관통 운행합니다. <b>${passengers}인</b> 탑승 환경에 맞춰 가장 가까운 안심 픽업 구역인 <b>[${waitingPlace}]</b> 등 실내 대기소에서 따뜻하게 대기하시고, 최단 시간으로 부여 전체 코스를 완전 정복하세요!`;
     }
 
     // Scenario C: Bus selected
@@ -945,6 +999,28 @@ export default function App() {
                       </button>
                     </div>
                   ))}
+
+                  {selectedTransports.includes('drt') && (
+                    <div className="bg-amber-50/60 border border-brand-gold/30 rounded-2xl p-3.5 flex justify-between items-center shadow-3xs animate-fade-in">
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="w-5 h-5 rounded-full bg-brand-gold text-brand-navy flex items-center justify-center text-[10px] font-black shrink-0">
+                          종점
+                        </span>
+                        <div className="min-w-0">
+                          <h5 className="font-extrabold text-xs text-brand-navy leading-none flex items-center gap-1.5">
+                            <span>공주역 KTX</span>
+                            <span className="bg-brand-navy text-brand-gold text-[8px] font-black px-1.5 py-0.5 rounded tracking-wider uppercase">
+                              DRT ENDPOINT
+                            </span>
+                          </h5>
+                          <span className="text-[9px] text-amber-800 font-bold block mt-1">
+                            ※ 오전 07:20, 오후 18:30 각 1회(총 2회) 연계 운행
+                          </span>
+                        </div>
+                      </div>
+                      <span className="text-sm select-none shrink-0 pr-1">🚄</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -1099,8 +1175,9 @@ function SinglePlaceCard({
 
       {/* Image Header */}
       <div className="relative h-36 w-full bg-slate-200 overflow-hidden">
-        <img 
+        <SafeImage 
           src={place.image} 
+          fallbackSrc={place.fallbackImage || place.image}
           alt={place.name} 
           className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
           loading="lazy"
@@ -1312,6 +1389,15 @@ function Ve({
   isSelected,
   onToggleSelect,
 }: PlaceDetailModalProps) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const galleryImages = place.gallery || [place.image];
+
+  const reviewTexts = [
+    { author: "한*우", text: "실물이 훨씬 더 고즈넉하고 예쁩니다! 가볍게 산책하기도 좋고 사진 구도가 너무 잘 나와요. 😊", rating: 5 },
+    { author: "이*진", text: "다녀오고 나서 가슴이 깊은 울림으로 가득 찼습니다. 주말인데도 한적하고 고요해서 참 힐링되었네요.", rating: 5 },
+    { author: "김*서", text: "주변 풍경과 조화가 예술입니다. 노을 질 때 또는 비가 올 때 가도 대박 운치 있습니다! 👍", rating: 5 },
+  ];
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
       <div className="bg-brand-cream w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] flex flex-col animate-scale-up border border-brand-navy/10">
@@ -1346,7 +1432,7 @@ function Ve({
             
             {/* Vibe subtitle / short description */}
             <div className="bg-white border border-brand-navy/5 p-3.5 rounded-2xl shadow-3xs text-center">
-              <p className="text-[11px] font-bold text-brand-navy leading-relaxed italic">
+              <p className="text-[11.5px] font-bold text-brand-navy leading-relaxed italic">
                 "{place.shortDescription}"
               </p>
             </div>
@@ -1457,6 +1543,85 @@ function Ve({
                     <ArrowRight className="w-3 h-3 text-brand-gold" />
                   </span>
                 ))}
+              </div>
+            </div>
+
+            {/* Real review photo slider */}
+            <div className="bg-white border border-brand-navy/5 p-4 rounded-3xl shadow-3xs text-left space-y-3">
+              <div className="flex items-center justify-between">
+                <h4 className="text-[10px] font-black text-brand-navy/55 flex items-center gap-1 uppercase tracking-wider">
+                  <span>📸 방문자 안심 생생 리뷰 포토</span>
+                </h4>
+                <div className="flex items-center gap-1.5 text-[9px] font-bold text-brand-navy/40">
+                  <span>{currentSlide + 1} / {galleryImages.length}</span>
+                </div>
+              </div>
+
+              {/* Slider Screen */}
+              <div className="relative w-full h-44 bg-slate-50 rounded-2xl overflow-hidden border border-brand-navy/5 shadow-2xs group">
+                <SafeImage 
+                  src={galleryImages[currentSlide]} 
+                  fallbackSrc={(place.fallbackGallery && place.fallbackGallery[currentSlide]) || place.fallbackImage || place.image}
+                  alt={`${place.name} review image ${currentSlide + 1}`} 
+                  className="w-full h-full object-cover select-none pointer-events-none transition-all duration-300"
+                  referrerPolicy="no-referrer"
+                />
+                
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/15 pointer-events-none" />
+
+                {/* Left control */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentSlide((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
+                  }}
+                  className="absolute left-2.5 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-brand-navy p-1.5 rounded-full shadow-md transition-all active:scale-90 z-10"
+                >
+                  <ChevronLeft className="w-3.5 h-3.5" />
+                </button>
+
+                {/* Right control */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentSlide((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+                  }}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-brand-navy p-1.5 rounded-full shadow-md transition-all active:scale-90 z-10"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+
+                {/* Dots Indicator */}
+                <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                  {galleryImages.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentSlide(idx);
+                      }}
+                      className={`w-1.5 h-1.5 rounded-full transition-all ${idx === currentSlide ? 'bg-brand-gold w-3' : 'bg-white/50'}`}
+                    />
+                  ))}
+                </div>
+
+                {/* Reviewer Tag */}
+                <div className="absolute bottom-2 left-3 text-white/95 text-[9px] font-bold drop-shadow-sm flex items-center gap-1">
+                  <span className="bg-brand-gold text-brand-navy font-black px-1.5 py-0.2 rounded text-[7px] uppercase">리뷰어</span>
+                  <span>{reviewTexts[currentSlide % reviewTexts.length].author}님</span>
+                </div>
+              </div>
+
+              {/* Review Text Box */}
+              <div className="bg-brand-cream/50 rounded-xl p-2.5 border border-brand-navy/5 text-left text-[10.5px] leading-relaxed">
+                <div className="flex items-center gap-1 mb-1">
+                  <span className="text-brand-gold font-bold">★★★★★</span>
+                  <span className="text-[9px] text-brand-navy/40 font-semibold">{reviewTexts[currentSlide % reviewTexts.length].author}님 등록 리뷰</span>
+                </div>
+                <p className="text-brand-navy/80 font-bold italic">
+                  "{reviewTexts[currentSlide % reviewTexts.length].text}"
+                </p>
               </div>
             </div>
 

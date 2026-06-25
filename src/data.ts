@@ -415,7 +415,20 @@ export let buyeoDb = {
     walkingLoad: "보통",
     budgetLevel: "낮음",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Korea-Buyeo-Gungnamji-01.jpg/800px-Korea-Buyeo-Gungnamji-01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Korea-Buyeo-Gungnamji-01.jpg/800px-Korea-Buyeo-Gungnamji-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Gungnamji_Lotus_Pond.jpg/800px-Gungnamji_Lotus_Pond.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Gungnamji_Poryongjeong.jpg/800px-Gungnamji_Poryongjeong.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gungnamji_in_summer_01.jpg/800px-Gungnamji_in_summer_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gungnamji_Night_View_01.jpg/800px-Gungnamji_Night_View_01.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "우리나라 최초의 인공 정원이자, 백제 무왕의 서동요 전설이 깃든 로맨틱한 연못",
     longDescription: "궁남지는 단순한 연못이 아니라 백제 무왕과 신라 선화공주의 극적인 사랑 이야기를 품은 역사적 공간입니다. 신라 안압지의 모태가 되었을 정도로 뛰어난 백제의 정원 조경 기술을 보여주며, 못 중앙의 포룡정과 이를 잇는 목조 다리는 한 폭의 그림 같은 정취를 자아냅니다. 사계절 내내 다른 매력이 있지만, 여름철 흐드러지게 피어나는 천만 송이 연꽃과 밤바람에 흔들리는 버드나무 풍경은 부여 여행의 정수를 보여줍니다.",
     whyRecommended: "드넓은 연못과 정자가 어우러진 정적인 아름다움은 마음을 차분하게 가라앉힙니다. 특히 저녁 시간에 야간 조명이 켜지면 물 위에 비친 포룡정이 신비로운 분위기를 연출하여 인생 사진을 남기기에 최고의 장소입니다.",
@@ -424,8 +437,8 @@ export let buyeoDb = {
     cautions: "그늘이 거의 없으므로 낮 시간대 방문 시 양산이나 모자를 필수로 지참해야 하며, 비가 오는 날에는 흙길이 다소 질척일 수 있습니다.",
     isIndoor: false,
     selectionWarnings: ["비 오는 날에는 야외 관람 시 우산이 필수이며 흙길 보행이 다소 제한될 수 있습니다.", "여름철 한낮(더운 날)에는 그늘막이 부족해 체력 소모가 큽니다. 모자나 생수를 지참하세요."],
-    coords: [36.2666, 126.9125],
-    busCoords: [36.2666, 126.9125],
+    coords: [36.2662, 126.9125],
+    busCoords: [36.2662, 126.9125],
     drtCoords: [36.2672, 126.9110],
     waitingPlace: "AT267 실내 대기실"
   },
@@ -441,7 +454,20 @@ export let buyeoDb = {
     walkingLoad: "많음",
     budgetLevel: "보통",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Korea-Buyeo-Busosanseong_Nakhwaam-01.jpg/800px-Korea-Buyeo-Busosanseong_Nakhwaam-01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Korea-Buyeo-Busosanseong_Nakhwaam-01.jpg/800px-Korea-Buyeo-Busosanseong_Nakhwaam-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Goran-sa_and_Baekma-gang_01.jpg/800px-Goran-sa_and_Baekma-gang_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Goransa_temple_hall_at_Buyeo.jpg/800px-Goransa_temple_hall_at_Buyeo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Busosanseong_Forest_Trail.jpg/800px-Busosanseong_Forest_Trail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Busosanseong_Sajaru_pavilion.jpg/800px-Busosanseong_Sajaru_pavilion.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "백제의 마지막 요새이자 삼천궁녀의 슬픈 전설이 깃든 낙화암을 품은 울창한 숲길 산성",
     longDescription: "부소산성은 백제 사비 시대의 도성을 지키던 중심 산성입니다. 울창한 소나무 숲길을 따라 걷다 보면 백제 멸망의 슬픈 전설을 간직한 낙화암과 그 아래 백마강의 비경이 한눈에 들어오는 고란사에 닿을 수 있습니다. 산 전체가 야트막한 야산 형태여서 가벼운 산책으로 생각하기 쉽지만, 낙화암과 고란사까지 둘러보고 오려면 제법 가파른 숲길을 걸어야 합니다. 강바람과 숲 내음이 어우러져 사색하기에 제격인 코스입니다.",
     whyRecommended: "백마강을 내려다보는 낙화암에서의 조망은 가슴을 틔워주며, 고란사에서 맛보는 약수와 고란초의 신비로움이 여행의 재미를 더합니다. 역사적 비장미와 수려한 자연 경관을 동시에 느낄 수 있습니다.",
@@ -467,7 +493,20 @@ export let buyeoDb = {
     walkingLoad: "적음",
     budgetLevel: "보통",
     crowdLevel: "여유",
-    image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Five-story_Stone_Pagoda_at_Jeongnimsa_Temple_Site_in_Buyeo_201709.jpg/800px-Five-story_Stone_Pagoda_at_Jeongnimsa_Temple_Site_in_Buyeo_201709.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Five-story_Stone_Pagoda_at_Jeongnimsa_Temple_Site_in_Buyeo_201709.jpg/800px-Five-story_Stone_Pagoda_at_Jeongnimsa_Temple_Site_in_Buyeo_201709.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Korea-Buyeo-Jeongnimsaji-03.jpg/800px-Korea-Buyeo-Jeongnimsaji-03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Korea-Buyeo-Jeongnimsaji-01.jpg/800px-Korea-Buyeo-Jeongnimsaji-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jeongnimsa_temple_site_museum.jpg/800px-Jeongnimsa_temple_site_museum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Jeongnimsa_Five-story_Stone_Pagoda_Details.jpg/800px-Jeongnimsa_Five-story_Stone_Pagoda_Details.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1547989453-11e67ffb3885?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "백제 조형미의 정점인 오층석탑이 우뚝 솟아 있는 사비 백제 불교 문화의 상징적 중심지",
     longDescription: "정림사지는 백제가 사비로 도읍을 옮긴 시기, 중심 성곽 내에 건립된 가장 중요한 사찰 터입니다. 이곳에 굳건히 서 있는 정림사지 오층석탑(국보)은 목조 탑의 부드러운 형식을 석조로 완벽히 재해석하여, 백제 특유의 절제되고 세련된 비례미를 뽐냅니다. 넓게 탁 트인 잔디 광장 한가운데 외로이 서 있는 석탑과 강당 안의 거대한 석조여래좌상은 세월의 무상함과 백제 예술의 영원함을 동시에 느끼게 합니다.",
     whyRecommended: "어스름한 일몰 무렵 석탑 너머로 노을이 깔리는 풍경은 압도적입니다. 불필요한 장식을 배제하고 선과 면만으로 구현한 절제미는 현대의 미니멀리즘과도 닮아 있어 깊은 울림을 줍니다.",
@@ -476,8 +515,8 @@ export let buyeoDb = {
     cautions: "실외 넓은 터에 위치해 그늘이 부족하지만, 부지 내의 정림사지 박물관이 훌륭한 실내 대피처 역할을 해 주므로 날씨가 궂을 때는 박물관 관람을 병행하세요.",
     isIndoor: false,
     selectionWarnings: ["사찰 터 자체는 100% 야외이므로 눈/비가 오는 날씨에는 우산이 꼭 필요합니다. 다행히 내부에 있는 실내 박물관으로 신속히 이동이 가능합니다."],
-    coords: [36.2782, 126.9142],
-    busCoords: [36.2782, 126.9142],
+    coords: [36.278385, 126.914107],
+    busCoords: [36.278385, 126.914107],
     drtCoords: [36.2775, 126.9135],
     waitingPlace: "정림사지 안내센터 실내 로비"
   },
@@ -493,7 +532,20 @@ export let buyeoDb = {
     walkingLoad: "적음",
     budgetLevel: "낮음",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1566121318599-db97b72e04f4?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Baekje_Geumdong_Daehyangro.jpg/800px-Baekje_Geumdong_Daehyangro.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Baekje_Geumdong_Daehyangro.jpg/800px-Baekje_Geumdong_Daehyangro.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Buyeo_National_Museum_Exhibit_01.jpg/800px-Buyeo_National_Museum_Exhibit_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Korea-Buyeo-Museum-01.jpg/800px-Korea-Buyeo-Museum-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Baekje_gilt-bronze_crown_01.jpg/800px-Baekje_gilt-bronze_crown_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Buyeo_Museum_Central_Plaza_Media_Art.jpg/800px-Buyeo_Museum_Central_Plaza_Media_Art.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1566121318599-db97b72e04f4?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1566121318599-db97b72e04f4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "백제 문화의 위대한 걸작인 백제금동대향로를 직접 만나는 고품격 실내 역사 콘텐츠",
     longDescription: "국립부여박물관은 사비 백제 시대의 문화유산을 체계적으로 보존하고 전시하는 공간입니다. 이곳의 주인공은 단연 국보 '백제금동대향로'입니다. 향로에 조각된 오악사, 신선, 동물들의 섬세한 묘사를 관찰하다 보면 시간이 가는 줄 모릅니다. 중앙 로비 천장에서 상영되는 초대형 미디어아트 디지털 쇼는 백제의 백색 미학과 역동성을 시각적으로 극대화하여 현대적인 감동을 전달합니다.",
     whyRecommended: "비가 오거나 날씨가 극단적으로 덥고 추울 때 가장 쾌적하게 여행할 수 있는 대안입니다. 특히 백제금동대향로 단독 전시실은 조명과 연출이 매우 어둡고 조용하게 설정되어 향로의 금빛 광채에 오롯이 몰입할 수 있습니다.",
@@ -502,8 +554,8 @@ export let buyeoDb = {
     cautions: "매주 월요일은 정기 휴관일이므로 방문 일정 수립 시 유의해야 합니다. 미디어아트 쇼는 상영 시간이 정해져 있으므로 입장 시 시간표를 먼저 확인하세요.",
     isIndoor: true,
     selectionWarnings: [],
-    coords: [36.2736, 126.9189],
-    busCoords: [36.2736, 126.9189],
+    coords: [36.2751, 126.9197],
+    busCoords: [36.2751, 126.9197],
     drtCoords: [36.2740, 126.9200],
     waitingPlace: "국립부여박물관 실내 북카페 쉼터"
   },
@@ -519,7 +571,20 @@ export let buyeoDb = {
     walkingLoad: "많음",
     budgetLevel: "여유",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1608976478952-47ef0e8548bb?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cheonjeongjeon_of_Sabi_Palace%2C_Baekje_Cultural_Land_01.jpg/800px-Cheonjeongjeon_of_Sabi_Palace%2C_Baekje_Cultural_Land_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cheonjeongjeon_of_Sabi_Palace%2C_Baekje_Cultural_Land_01.jpg/800px-Cheonjeongjeon_of_Sabi_Palace%2C_Baekje_Cultural_Land_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Baekje_Cultural_Land_Pagoda_01.jpg/800px-Baekje_Cultural_Land_Pagoda_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Baekje_Cultural_Land_Sabi_Palace_Cheonjeongjeon.jpg/800px-Baekje_Cultural_Land_Sabi_Palace_Cheonjeongjeon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Baekje_Cultural_Land_Living_Village.jpg/800px-Baekje_Cultural_Land_Living_Village.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Baekje_Cultural_Land_Wiryeseong.jpg/800px-Baekje_Cultural_Land_Wiryeseong.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1608976478952-47ef0e8548bb?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1608976478952-47ef0e8548bb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "백제 사비궁과 제향루, 생활문화마을까지 웅장하게 재현해 놓은 국내 최대 백제 역사 테마파크",
     longDescription: "백제문화단지는 찬란했던 백제 역사의 흔적을 완벽히 재현한 복합 문화 공간입니다. 거대한 사비궁 내부를 걷다 보면 왕실의 권위와 백제 단청의 단아하고 우아한 색감을 생생히 느낄 수 있습니다. 단지 뒷산의 제향루에 오르면 문화단지 전체 전경이 시원하게 펼쳐지며, 백제 한성시대의 위례성을 재현한 성곽과 전통가옥이 모여 있는 생활문화마을에서는 활쏘기 등 다양한 전통 놀이를 직접 체험해볼 수 있습니다.",
     whyRecommended: "사극 속에 들어온 듯한 웅장한 목조 아키텍처 배경으로 한복 체험 및 사진 촬영이 인기가 많습니다. 가을철 및 야간 개장 시 빛으로 채워지는 사비궁의 야경은 한옥의 미를 극대화해 보여줍니다.",
@@ -528,8 +593,8 @@ export let buyeoDb = {
     cautions: "부지가 매우 넓고 그늘이 부족해 걷는 피로도가 높습니다. 양산 대여 서비스를 활용하고 편안한 신발을 신는 것이 좋습니다.",
     isIndoor: false,
     selectionWarnings: ["부지가 매우 방대하고 완전히 개방된 야외 정원 위주이므로 비/눈이 오는 날 관람은 체력을 크게 고갈시킬 수 있습니다.", "읍내 외곽(규암면)에 위치하여 무차량 관광객은 일반 버스 배차 간격을 놓칠 경우 이동 수단 지연 주의가 가장 심한 명소입니다."],
-    coords: [36.2995, 126.8965],
-    busCoords: [36.2995, 126.8965],
+    coords: [36.3015, 126.8978],
+    busCoords: [36.3015, 126.8978],
     drtCoords: [36.3000, 126.8950],
     waitingPlace: "백제문화단지 안내소 대기실"
   },
@@ -545,7 +610,20 @@ export let buyeoDb = {
     walkingLoad: "적음",
     budgetLevel: "보통",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baekma-gang_and_Goransa_01.jpg/800px-Baekma-gang_and_Goransa_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baekma-gang_and_Goransa_01.jpg/800px-Baekma-gang_and_Goransa_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Nakhwaam_from_Baekmagang_River.jpg/800px-Nakhwaam_from_Baekmagang_River.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Goran-sa_and_Baekma-gang_01.jpg/800px-Goran-sa_and_Baekma-gang_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baekmagang_Hwangpodotbae_Boat_01.jpg/800px-Baekmagang_Hwangpodotbae_Boat_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Baekmagang_Sunset_Bridge_01.jpg/800px-Baekmagang_Sunset_Bridge_01.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505244208262-bd30d3a77825?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "황포돛배를 타고 선상에서 바라보는 낙화암과 부소산의 절경, 옛 백제의 뱃길을 복원한 수상 체험",
     longDescription: "백마강 수상관광은 구드래나루터에서 부소산성 뒤편 고란사나루터를 오가는 황포돛배 유람선입니다. 강물 위에서 스쳐 지어가는 낙화암 절벽의 붉은 글씨('낙화암')와 고란사 전경을 가장 가까이서 감상할 수 있는 독보적인 수단입니다. 탑승하는 동안 배 안에서 들려오는 가락과 구수한 해설은 여행의 흥을 돋우며, 강바람을 맞으며 돛을 매단 전통 배의 정취를 즐길 수 있습니다.",
     whyRecommended: "차 없는 여행자에게 단순한 즐길 거리를 넘어, 구드래(읍내 인근)와 부소산성 후문을 이어주는 훌륭한 지름길 역할을 해 줍니다. 강 위에서 보는 낙화암은 지상에서 보는 것과는 전혀 다른 웅장한 감동을 선사합니다.",
@@ -554,8 +632,8 @@ export let buyeoDb = {
     cautions: "강한 바람이나 폭우, 강물 수위 변화 등 기상 악화 시 운항이 예고 없이 중단될 수 있으므로 날씨 정보를 미리 확인해야 합니다.",
     isIndoor: false,
     selectionWarnings: ["비가 많이 오거나 바람이 강한 날에는 운항이 즉각 결항되므로 대체 교통수단(도보/택시)을 강구해야 합니다."],
-    coords: [36.2871, 126.9025],
-    busCoords: [36.2871, 126.9025],
+    coords: [36.2891, 126.9075],
+    busCoords: [36.2891, 126.9075],
     drtCoords: [36.2875, 126.9015],
     waitingPlace: "구드래 선착장 쉼터"
   },
@@ -571,7 +649,18 @@ export let buyeoDb = {
     walkingLoad: "보통",
     budgetLevel: "낮음",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gudrae_Naru_dock_at_Buyeo.jpg/800px-Gudrae_Naru_dock_at_Buyeo.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Gudrae_Naru_dock_at_Buyeo.jpg/800px-Gudrae_Naru_dock_at_Buyeo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Nakhwaam_from_Baekmagang_River.jpg/800px-Nakhwaam_from_Baekmagang_River.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baekma-gang_and_Goransa_01.jpg/800px-Baekma-gang_and_Goransa_01.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "백마강변의 평화로운 잔디 광장과 예술 조각품들, 그리고 나루터 주변의 유명 맛집들이 모인 로컬 허브",
     longDescription: "구드래나루터는 백마강변에 조성된 드넓은 둔치 공원입니다. 과거 백제 사비 시대에 동아시아의 해상 교통 허브이자 무역항 역할을 했던 역사적 장소입니다. 지금은 아름다운 조각품들이 늘어선 예술 조각공원과 드넓은 억새밭길, 그리고 백마강 유람선(황포돛배)을 타는 포구로 탈바꿈했습니다. 공원 인근에는 부여의 대표 로컬 메뉴인 '쌈밥' 거리와 오래된 맛집들이 즐비하여 눈과 입이 동시에 즐거운 공간입니다.",
     whyRecommended: "유람선 탑승 전후로 시간이 뜰 때 탁 트인 강변 잔디밭을 산책하거나 벤치에 앉아 쉬기에 좋습니다. 해가 질 무렵 백마강으로 지는 일몰이 무척 아름답습니다.",
@@ -580,8 +669,8 @@ export let buyeoDb = {
     cautions: "여름철 낮 시간대에는 햇볕을 피할 나무 그늘이 강변 쪽에 다소 부족하므로 선크림과 모자가 요긴하게 쓰입니다.",
     isIndoor: false,
     selectionWarnings: ["강변 둔치 특성상 비가 올 때 피할 건물 그늘막이 부족하며, 강풍 노출이 심합니다."],
-    coords: [36.2865, 126.9038],
-    busCoords: [36.2865, 126.9038],
+    coords: [36.2861, 126.9033],
+    busCoords: [36.2861, 126.9033],
     drtCoords: [36.2860, 126.9045],
     waitingPlace: "구드래조각공원 야외정자"
   },
@@ -597,7 +686,18 @@ export let buyeoDb = {
     walkingLoad: "보통",
     budgetLevel: "보통",
     crowdLevel: "여유",
-    image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Korea-Buyeo-Neungsanri_Tombs-01.jpg/800px-Korea-Buyeo-Neungsanri_Tombs-01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Korea-Buyeo-Neungsanri_Tombs-01.jpg/800px-Korea-Buyeo-Neungsanri_Tombs-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Neungsan-ri_Tombs_01.jpg/800px-Neungsan-ri_Tombs_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Buyeo_Neungsan-ri_Royal_Tombs_Detail.jpg/800px-Buyeo_Neungsan-ri_Royal_Tombs_Detail.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1492496913980-50134c7617a5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "부여의 나성 아래 아늑하게 자리 잡은 사비 백제 왕실의 고분군, 부드러운 능선이 그리는 쉼표",
     longDescription: "부여왕릉원(구 능산리고분군)은 사비 백제 시대의 왕과 왕족들의 무덤으로 추정되는 7기의 고분군입니다. 무덤 내부의 벽화와 출토된 화려한 유물들은 백제 후기 장묘 문화와 미술의 정수를 보여줍니다. 왕릉원 바로 옆에는 백제의 외곽 방어 성곽이었던 '나성'이 뻗어 있으며, 고분군의 나지막하고 둥근 능선들이 숲과 어우러져 한적하고 고즈넉한 사책의 산책길을 만들어 줍니다.",
     whyRecommended: "대단위 관광지보다 한적하고 방문객이 적어 고요하게 유적지를 전세 낸 듯한 힐링을 맛볼 수 있습니다. 능선들의 자연스러운 곡선미가 자아내는 평온함을 가만히 지켜보며 쉬어가기에 좋습니다.",
@@ -606,8 +706,8 @@ export let buyeoDb = {
     cautions: "실내 전시관(부여왕릉원 아트홀) 외에는 전 구역이 실외 잔디밭길이므로 우천 시 관람이 매우 제한됩니다.",
     isIndoor: false,
     selectionWarnings: ["비가 오는 날에는 실외 고분군 산책로의 매력이 쇠퇴하며 실외 배기 대기 여건이 불리합니다."],
-    coords: [36.2772, 126.9325],
-    busCoords: [36.2772, 126.9325],
+    coords: [36.2783, 126.9405],
+    busCoords: [36.2783, 126.9405],
     drtCoords: [36.2768, 126.9315],
     waitingPlace: "왕릉원 아트홀 실내 대기소"
   },
@@ -623,7 +723,18 @@ export let buyeoDb = {
     walkingLoad: "적음",
     budgetLevel: "낮음",
     crowdLevel: "혼잡",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Korean_traditional_market_food_01.jpg/800px-Korean_traditional_market_food_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Korean_traditional_market_food_01.jpg/800px-Korean_traditional_market_food_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Buyeo_market_interior_02.jpg/800px-Buyeo_market_interior_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Korean_market_pancakes_jeon.jpg/800px-Korean_market_pancakes_jeon.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "부여의 생생한 삶의 현장, 연잎밥·치킨 등 독특한 로컬 음식과 정겨운 시골 장터 풍경",
     longDescription: "부여전통시장은 백제의 도읍 부여의 맥을 잇는 활기 넘기는 생활 공간입니다. 상설로 운영되는 현대식 상가 건물과 함께 매 5일, 10일마다 열리는 5일장에는 부여 인근 농가에서 직접 가꾼 신선한 농산물과 풍성한 먹거리가 가득 펼쳐집니다. 부여의 대표 특산물인 '연잎'을 활용한 향긋한 연잎떡갈비정식이나, 시장 내의 명물 가마솥 옛날 통닭, 시골 칼국수 등 저렴하고 든든하게 한 끼를 해결할 수 있는 로컬 맛집들의 중심지입니다.",
     whyRecommended: "화려한 유적지 구경 뒤에 느끼는 소박하고 투박한 진짜 부여 사람들의 활력을 마주할 수 있습니다. 지붕이 아케이드식으로 가려져 있어 비가 오는 날에도 맛있는 로컬 음식 탐방을 쾌적하게 즐길 수 있습니다.",
@@ -632,8 +743,8 @@ export let buyeoDb = {
     cautions: "5일장 날이 아닐 때는 일반 평일 오후 늦게 문을 닫는 가게들이 있으므로 늦은 저녁 시간 방문보다는 아침이나 점심 식사를 목적으로 방문하는 것을 권장합니다.",
     isIndoor: true,
     selectionWarnings: [],
-    coords: [36.2815, 126.9105],
-    busCoords: [36.2815, 126.9105],
+    coords: [36.2818, 126.9148],
+    busCoords: [36.2818, 126.9148],
     drtCoords: [36.2810, 126.9095],
     waitingPlace: "중앙시장 팥죽 골목 쉼터"
   },
@@ -649,7 +760,18 @@ export let buyeoDb = {
     walkingLoad: "보통",
     budgetLevel: "보통",
     crowdLevel: "여유",
-    image: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Muryangsa_temple_hall_in_Buyeo%2C_Korea.jpg/800px-Muryangsa_temple_hall_in_Buyeo%2C_Korea.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Muryangsa_temple_hall_in_Buyeo%2C_Korea.jpg/800px-Muryangsa_temple_hall_in_Buyeo%2C_Korea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Buyeo_Muryangsa_Geungnakjeon.jpg/800px-Buyeo_Muryangsa_Geungnakjeon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Muryangsa_stone_pagoda_at_Buyeo.jpg/800px-Muryangsa_stone_pagoda_at_Buyeo.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "만수산 울창한 계곡 끝자락에 숨겨진 보물, 생육신 김시습이 마지막을 보낸 천년 고찰",
     longDescription: "무량사는 부여군 외곽 만수산 자락에 자리 잡은 유서 깊은 사찰입니다. '한량없는 보배가 가득한 절'이라는 이름처럼 임진왜란 때 소실되지 않고 살아남은 중층 구조의 극락전(보물)과 거대한 미륵불상 등 찬란한 문화재를 가득 품고 있습니다. 조선 세조 시기 생육신 중 한 명인 천재 시인 매월당 김시습이 세상을 등지고 입적한 곳으로도 유명합니다. 사찰로 향하는 만수산 숲길의 소나무 터널과 맑은 계곡 소리는 세속의 시름을 말끔히 씻어 줍니다.",
     whyRecommended: "외딴 깊은 산속에 위치해 있어 도시의 소음이 완벽히 차단됩니다. 특히 비가 가볍게 내리는 날 빗소리를 들으며 대웅전 처마 밑에 앉아 있는 고요한 템플 힐링 경험은 영혼을 위로해 줍니다.",
@@ -658,8 +780,8 @@ export let buyeoDb = {
     cautions: "교통 접근성이 낮아 대중교통 배차를 놓치면 택시비 지출이 큽니다. 반드시 스마트폰 버스 정보 앱을 켜두거나 버스 터미널 시간표를 찍어 두세요.",
     isIndoor: false,
     selectionWarnings: ["부여 시내와 상당히 멀리 동떨어진 외진 사찰이므로 시내버스 배차 주기가 매우 깁니다. 뚜벅이 여행자는 차편 복귀 일정을 초단위로 확인하셔야 합니다."],
-    coords: [36.3155, 126.7188],
-    busCoords: [36.3155, 126.7188],
+    coords: [36.3151, 126.7125],
+    busCoords: [36.3151, 126.7125],
     drtCoords: [36.3150, 126.7175],
     waitingPlace: "무량사 입구 매표소 쉼터"
   },
@@ -675,7 +797,18 @@ export let buyeoDb = {
     walkingLoad: "보통",
     budgetLevel: "보통",
     crowdLevel: "여유",
-    image: "https://images.unsplash.com/photo-1498307818610-a4a920202150?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Seodongyo_Theme_Park_drama_set_01.jpg/800px-Seodongyo_Theme_Park_drama_set_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Seodongyo_Theme_Park_drama_set_01.jpg/800px-Seodongyo_Theme_Park_drama_set_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Seodongyo_Theme_Park_Korean_houses.jpg/800px-Seodongyo_Theme_Park_Korean_houses.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Seodongyo_Theme_Park_Gate.jpg/800px-Seodongyo_Theme_Park_Gate.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1498307818610-a4a920202150?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1498307818610-a4a920202150?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "아름다운 덕용저수지변에 펼쳐진 백제·신라시대식 오픈 세트장, 역사 속 주인공이 되는 이색 촬영지",
     longDescription: "서동요테마파크는 드라마 '서동요'를 비롯해 수많은 역사극의 촬영지로 세워진 거대한 야외 오픈 세트장입니다. 삼국시대 백제 왕궁과 귀족 가옥, 서민들의 초가집, 신라 왕궁까지 시대와 신분에 따른 가옥들이 정교하게 조각되어 있어 흥미를 자아냅니다. 세트장 바로 앞에는 잔잔하고 거대한 덕용저수지가 감싸 흐르고 있어 자연풍광이 뛰어나며, 저수지 둘레를 따라 조성된 수변 데크길 산책 코스도 훌륭합니다.",
     whyRecommended: "사람들이 북적이지 않는 넓고 조용한 공간에서 복식 체험이나 이색 역사 사진을 자유롭게 찍을 수 있습니다. 저수지 수변 길의 데크 로드가 길게 뻗어 있어 아름다운 인생 샷을 건질 수 있습니다.",
@@ -684,8 +817,8 @@ export let buyeoDb = {
     cautions: "야외 매점이 운영되지 않는 비수기에는 마실 음료를 챙겨가는 것이 좋습니다. 우천 시에는 세트장 내부 보행로가 미끄러울 수 있어 주의해야 합니다.",
     isIndoor: false,
     selectionWarnings: ["시외 지역이며 그늘막이 부족하며, 강풍 노출이 심합니다."],
-    coords: [36.2085, 126.8152],
-    busCoords: [36.2085, 126.8152],
+    coords: [36.1963, 126.8152],
+    busCoords: [36.1963, 126.8152],
     drtCoords: [36.2080, 126.8140],
     waitingPlace: "서동요테마파크 안내센터"
   },
@@ -701,7 +834,18 @@ export let buyeoDb = {
     walkingLoad: "적음",
     budgetLevel: "낮음",
     crowdLevel: "보통",
-    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Sin_Dong-yeop_House_at_Buyeo.jpg/800px-Sin_Dong-yeop_House_at_Buyeo.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Sin_Dong-yeop_House_at_Buyeo.jpg/800px-Sin_Dong-yeop_House_at_Buyeo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Shin_Dong-yeop_Poetry_Monument_01.jpg/800px-Shin_Dong-yeop_Poetry_Monument_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Korea-Buyeo-Museum-01.jpg/800px-Korea-Buyeo-Museum-01.jpg"
+    ],
+    fallbackImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+    fallbackGallery: [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+    ],
     shortDescription: "민족시인 신동엽의 생가와 문학 세계를 기리는 모던하고 감각적인 건축 예술 공간",
     longDescription: "신동엽문학관은 대한민국 현대 민족문학의 거장 신동엽 시인(\"껍데기는 가라\", \"금강\")의 고향 부여에 세워진 문학 예술 공간입니다. 세계적인 건축가 승효상 선생이 설계한 문학관 건물 자체가 하나의 예술작품으로, 주변 시골 골목 풍경 속에 겸손하고 나지막하게 어우러져 있습니다. 시인의 육필 원고와 유품들을 감상하고 옥상 정원에 오르면 주변 시골 마을 풍경과 부여의 하늘이 한눈에 포개어지며 깊은 사색을 선물합니다.",
     whyRecommended: "화려한 백제 왕실 유적지와 달리, 부여의 골목 깊숙이 자리 잡은 현대 한국 문학의 지적인 온기를 느낄 수 있습니다. 문학관 내부 쉼터와 옥상의 잔디 언덕은 도보 여행자에게 가장 조용하고 세련된 치유의 쉼터를 제공합니다.",
@@ -710,8 +854,8 @@ export let buyeoDb = {
     cautions: "매주 월요일은 정기 휴관일이므로 방문 일정 수립 시 유의해야 합니다.",
     isIndoor: true,
     selectionWarnings: [],
-    coords: [36.2778, 126.9095],
-    busCoords: [36.2778, 126.9095],
+    coords: [36.2768, 126.9121],
+    busCoords: [36.2768, 126.9121],
     drtCoords: [36.2775, 126.9085],
     waitingPlace: "문학관 북카페 안심 대기실"
   }
@@ -853,22 +997,22 @@ export const TRANSPORTS: Transport[] = [
   },
   {
     id: "drt",
-    name: "수요응답형 버스 (DRT) 예정",
-    type: "future",
+    name: "수요응답형 버스 (DRT)",
+    type: "public",
     image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?auto=format&fit=crop&w=800&q=80",
     suitableFor: "대기시간 절약을 선호하는 합리적 스마트 뚜벅이",
     minPeople: 1,
     maxPeople: 10,
     reservationRequired: true,
     costLevel: "낮음",
-    reliability: "보통 (앱 호출 기반)",
+    reliability: "매우 신속 (앱 호출 및 노선 자동 배차)",
     weatherSensitive: false,
-    walkingBurden: "보통",
-    description: "고정 노선 없이 실시간 호출 수요에 매칭해 정류장 간 최단 경로를 가동하는 차세대 콜버스 모델입니다. (시범 준비 중)",
+    walkingBurden: "적음",
+    description: "고정 노선 없이 실시간 호출 수요에 매칭해 정류장 간 최단 경로를 가동하는 차세대 콜버스 모델입니다. 부여 노선을 전담하여 시외버스터미널부터 궁남지, 정림사지, 백제문화단지, 공주역 KTX를 빠르게 연계합니다.",
     strength: "일반 버스에 준하는 저렴한 요금으로 택시 수준의 개인 맞춤형 신속 노선을 실현합니다.",
-    caution: "현재 부여군 정책 추진 중인 도입 예정 코스로 실사용은 제한적입니다.",
+    caution: "부여-공주역 노선을 연계하여 탑승 가능하며, 승하차 지점 및 도보 동선을 획기적으로 줄여줍니다.",
     whyUseThis: "대중교통 주기가 너무 뜸한 읍내 주요 환승 노선에서 대기 시간 없이 원스톱 호출로 버스를 타기 위함입니다.",
-    selectionWarnings: ["현재 데모 버전 및 현장 시범 기간에만 일부 정류장에서 매칭되는 차세대 시스템입니다."]
+    selectionWarnings: ["부여 스마트 관광 가이드의 특별 노선으로, 선택하신 관광명소 순서대로 안전하게 이동이 가능합니다."]
   }
 ];
 

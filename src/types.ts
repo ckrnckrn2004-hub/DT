@@ -45,6 +45,9 @@ export interface Place {
   cautions?: string;
   isIndoor: boolean;
   selectionWarnings?: string[];
+  gallery?: string[];
+  fallbackImage?: string;
+  fallbackGallery?: string[];
   // Geographic coordinates for Leaflet map mapping
   coords: [number, number];
   busCoords: [number, number];
